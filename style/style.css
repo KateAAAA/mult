@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Cuprum; /* Гарнитура шрифта */
+    src: url(../fonts/Cuprum-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    background: url(../images/fon.png) no-repeat; /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+    width: 99%;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    height: 2000px;
+	font-family: Cuprum;
+   }
+/* --------шапка--------- */  
+#button1 {
+	margin: 0 auto;
+}
+div.bluebutton {
+  color: white;
+  width: 201px;
+  font-size: 18px;
+  padding: 8px;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 15px;
+  background: #3a53cf;
+  transition: 0.2s;
+} 
+div.bluebutton:hover { background: rgb(53, 72, 167); }
+div.bluebutton:active {
+  background: #3a53cf;
+}
+div.container {
+	width: 100%;
+	background-color: rgb(88,102,111);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	font-size: 20px;	
+}
+.minilogo {
+	text-align: center;
+	padding-top: 4px;
+}
+.phone {
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.company {
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+}
+#siteName {
+	background-color: white;
+	background: url(../images/name.png) no-repeat;
+}
+/* --------меню--------- */
+.menu {
+	display: block;
+    width: 100%;
+    margin-top: 37px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.menu ul {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.menu li {
+    float: left;
+    width: 20%;
+}
+.menu a {
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+  font-family: Cuprum; 
+}
+.menu a:hover {
+  color: yellow;
+}
+/* --------что такое мультостудия--------- */
+#container1 {
+	margin: 0 auto;
+	width: 85%;
+	margin-top: 470px;
+	text-align: center;
+}
+.headerBlog {
+	padding-top: 85px;
+	font-size: 45px;
+}
+#blogInfo {
+	border-radius: 15px;
+	background-color: white;
+	height: 450px;
+	width: 35%;
+	float: left;
+	margin-left: 10px;
+	color: #534741;
+	text-align: left;
+}
+#blogInfo li {
+	list-style: none; /* Убираем исходные маркеры */
+	padding-top: 10px;
+    padding-bottom: 10px;
+    background: url(../images/monkey.png) no-repeat 0 5px; /*Параметры фона */
+    padding-left: 33px;
+}
+#makaka {
+	width: 28%;
+	float: left;
+}
+#makaka img {
+	padding-left: 5px;
+}
+#formasvazi {
+	border-radius: 15px;
+	background-color: white;
+	color:#534741; 
+	width: 35%;
+	height: 450px;
+	float: left;
+}
+#formasvazi .bigText {
+	font-size:28px;
+}
+#formasvazi .minitext {
+
+}
+/* --------чему научиться ребенок--------- */
+#container2 {
+	margin: 0 auto;
+	width: 85%;
+	
+	text-align: center;
+	color: red;
+}
+.zanatia {
+	display: block;
+    width: 100%;
+}
+.zanatia ul {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.zanatia li {
+    float: left;
+    width: 25%;
+    font-size: 18px;
+}
+.zanatia a {
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+  font-family: Cuprum; 
+}
+.zanatia img {
+	border-radius: 100px; /* Радиус скругления */
+    border: 12px solid white; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+.zanatia1 {
+	display: block;
+    width: 100%;
+}
+.zanatia1 ul {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.zanatia1 li {
+    float: left;
+    width: 25%;
+    font-size: 18px;
+}
+.zanatia1 a {
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+  font-family: Cuprum; 
+}
+.zanatia1 img {
+	border-radius: 100px; /* Радиус скругления */
+    border: 12px solid blue; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+/* --------контакты--------- */
+#contacts {
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+	color: red;
+}
+/*--------футер-------- */
+#footer {
+	width: 100%;
+	color: black;
+	text-align: right;
+
+}
+/* --------iширина экрана 484 и меньше--------- */
+@media (max-width:484px) {
+	div#container {
+	width: 100%;
+	height: 7%;
+	background-color: rgba(88,102,111,0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	font-size: 15px;
+	
+	font-family: Cuprum;
+}
+}
