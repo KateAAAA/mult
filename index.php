@@ -16,25 +16,34 @@
 		    else
 		    	if ($("div").is(".minilogo"))	$("div" ).remove(".minilogo");    	
 		    });
+
+		  $(window).on("scroll", function() {
+		    if ($(window).scrollTop() > 400){
+		    	$('#idmenu').removeClass('menu');
+		    	$('#idmenu').addClass('menufixed');
+		    }		    	
+		    else {
+		    	$('#idmenu').removeClass('menufixed');
+		    	$('#idmenu').addClass('menu');
+		    }   	
+		    });
 		</script>
     </head>
+
     <body>
-    	<div class="container"><div class="company"><small>Центр цифровых технологий</small> <br> "Новатикус" </div>  <div class="phone">Звоните: +7 (351) 751-12-67 </div></div>
+    	<div class="container"><div class="company"><small>Центр цифровых технологий</small> <br> "Новатикус" </div> 	<div class="phone">Звоните: +7 (351) 751-12-67 </div>
+    	</div>
     	
-    	
-    	<div class="menu">
+		<div id = "container1">
+		<div id="idmenu" class="menu">
 		    <ul>
 		      <li><a href="#Что_такое_мультостудия?" style="background:#fd8026">Что такое мультостудия?</a></li>
-		      <li><a href="" style="background:#0d9cea">Чему научиться ребенок?</a></li>
-		      <li><a href="" style="background:#a349a3">?</a></li>
+		      <li><a href="" style="background:#0d9cea">Что делаем на занятиях?</a></li>
+		      <li><a href="" style="background:#a349a3">Примеры проектов</a></li>
 		      <li><a href="" style="background:#edd31c">Почему именно мы?</a></li>
 		      <li><a href="" style="background:#ed1c22">Карта и контакты</a></li>
 		    </ul>
 		</div>
-
-		<button id = "button1" class="bluebutton">Получить бесплатный урок</button>
-
-		<div id = "container1">
 			<div id="Что_такое_мультостудия?"></div>
 			<h1 style="color:yellow" class="headerBlog">Что такое Мультостудия?</h1>
 			<div id ="blogInfo">
@@ -54,11 +63,12 @@
 			<div id ="formasvazi">
 				<div class="bigText">Запишите ребенка <br>на <text style="color:black">бесплатное</text> занятие <br>прямо сейчас!</div>
 				<form name="test" method="post" action="input.php">
-					<input type="text" size="40">
-					<input type="text" size="40">
-					<button>Записаться на занятие</button>
-					<input type="submit" value="Записаться на занятие1">
-					<div class="minitext">После получения Ваших контактных данных с Вами свяжется администратор нашего центра и согласует время занятия! Пожалуйста, будьте на связи!</div>
+					<ul>
+						<li><input type="text" placeholder="Ваше ФИО"></br></li>
+						<li><input type="text" placeholder="Ваш номер телефона"></li>
+					</ul>
+						<div class="bluebutton">Записаться на занятие</div>
+						<div class="minitext">После получения Ваших контактных данных с Вами свяжется администратор нашего центра и согласует время занятия! Пожалуйста, будьте на связи!</div>					
 				</form>	
 				<small></small>			
 			</div>
@@ -86,17 +96,22 @@
 			<h1 style="color:black" class="headerBlog">Еще немного старания....<br>И мультфильм готов!!</h1>
 			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты:</h1>
 		</div>
-
+	
 		<div id = "contacts">
 			<h1 style="color:black" class="headerBlog">Карта и контакты</h1>
 			<a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001019995442/center/61.37535810470582,55.15696610424921/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a><div class="dg-widget-link"><a href="http://2gis.ru/chelyabinsk/center/61.375358,55.156963/zoom/16/routeTab/rsType/bus/to/61.375358,55.156963╎Интернет технологии, ООО, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Интернет технологии, ООО, компания</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1200,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.15696610424921,"lon":61.37535810470582,"zoom":16},"opt":{"city":"chelyabinsk"},"org":[{"id":"70000001019995442"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-			<div class="bluebutton">Хочу получить бесплатный урок для ребенка!</div>
+			<br>
+			<br>
+			<br>
+			<div class="bluebutton" >Хочу получить бесплатный урок для ребенка!</div>
 		</div>
 
 		<div id="footer">
-			ООО "Интернет технологии" (с) 2014-2016<br>
-			г. Челябинск, ул. Энтузиастов, 12, офис 607<br>
-			751-12-67
+			<div class="footertext">
+				ООО "Интернет технологии" (с) 2014-2016<br>
+				г. Челябинск, ул. Энтузиастов, 12, офис 607<br>
+				751-12-67
+			</div>
 		</div>
     </body>
 </html>
