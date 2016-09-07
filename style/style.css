@@ -3,22 +3,19 @@
     src: url(../fonts/Cuprum-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 body {
-    background: url(../images/fon.png) no-repeat; /* Цвет фона и путь к файлу */
+    background: url(../images/fon.jpg) no-repeat; /* Цвет фона и путь к файлу */
     color: #fff; /* Цвет текста */
     width: 99%;
      -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    height: 2000px;
+    height: auto;
 	font-family: Cuprum;
 	width: 100%;
 	margin: 0;
    }
 /* --------шапка--------- */  
-#button1 {
-	margin: 0 auto;
-}
 div.bluebutton {
   color: white;
   width: 201px;
@@ -37,7 +34,12 @@ div.bluebutton:hover {
 div.bluebutton:active {
   background: #3a53cf;
 }
+div.bluebutton a {
+	color: white;
+	text-decoration: none;
+  	text-align: center;}
 div.container {
+	z-index: 100;
 	width: 100%;
 	background-color: rgb(88,102,111);
 	position: fixed;
@@ -47,6 +49,7 @@ div.container {
 	font-size: 20px;	
 }
 .minilogo {
+	height: 29px;
 	text-align: center;
 	padding-top: 4px;
 }
@@ -59,6 +62,11 @@ div.container {
 	float: left;
 	text-align: center;
 	margin-left: 10px;
+}
+.testblog{
+	display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 /* --------меню--------- */
 .menu {
@@ -73,7 +81,7 @@ div.container {
     left: 0;
     right: 0;
 	position: fixed;
-	top:61px;
+	top: 46px;
 }
 .menu ul {
 	width: 100%;
@@ -83,7 +91,7 @@ div.container {
 	overflow: hidden;
 }
 .menufixed ul {
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 0;
 	list-style: none;
@@ -127,13 +135,13 @@ div.container {
 }
 /* --------что такое мультостудия--------- */
 #container1 {
-	padding-top: 434px;
+	padding-top: 28%;
 	margin: 0 auto;
-	width: 85%;
+	width: 100%;
 	text-align: center;
 }
 .headerBlog {
-	padding-top: 85px;
+	padding-top: 7%;;
 	font-size: 45px;
 }
 #blogInfo {
@@ -255,6 +263,56 @@ div.container {
 	border-radius: 100px; /* Радиус скругления */
     border: 12px solid blue; /* Параметры рамки */
     box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+/* --------видео--------- */
+#container3 {
+	margin: 0 auto;
+	width: 100%;	
+	text-align: center;
+	color: red;
+	background: url(../images/dolphin.png) no-repeat 0 65px;
+}
+.video {
+	margin: 0 auto;	
+	display: block;
+    width: 85%;
+}
+.video ul {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.video li {
+    float: left;
+    width: 33%;
+    font-size: 18px;
+}
+.video a {
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+  font-family: Cuprum; 
+}
+/* --------почему стоит пойти в нашу студию--------- */
+#container4 {
+	background: url(../images/romashki.png) no-repeat; /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+    width: 99%;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    height: 600px;
+	font-family: Cuprum;
+	width: 100%;
+	text-align: center;
 }
 /* --------контакты--------- */
 #contacts {

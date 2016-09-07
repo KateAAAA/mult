@@ -11,14 +11,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>
 		  $(window).on("scroll", function() {
-		    if ($(window).scrollTop() > 400){
+		    if ($(window).scrollTop() > 388){
 		    	if (!($("div").is(".minilogo")))$('.container').append('<div class="minilogo"><img src="images/mini.png"/></div>');}
 		    else
 		    	if ($("div").is(".minilogo"))	$("div" ).remove(".minilogo");    	
 		    });
 
 		  $(window).on("scroll", function() {
-		    if ($(window).scrollTop() > 400){
+		    if ($(window).scrollTop() > 388){
 		    	$('#idmenu').removeClass('menu');
 		    	$('#idmenu').addClass('menufixed');
 		    }		    	
@@ -33,18 +33,19 @@
     <body>
     	<div class="container"><div class="company"><small>Центр цифровых технологий</small> <br> "Новатикус" </div> 	<div class="phone">Звоните: +7 (351) 751-12-67 </div>
     	</div>
-    	
+    	<div class="testblog"></div>
 		<div id = "container1">
 		<div id="idmenu" class="menu">
 		    <ul>
 		      <li><a href="#Что_такое_мультостудия?" style="background:#fd8026">Что такое мультостудия?</a></li>
-		      <li><a href="" style="background:#0d9cea">Что делаем на занятиях?</a></li>
-		      <li><a href="" style="background:#a349a3">Примеры проектов</a></li>
-		      <li><a href="" style="background:#edd31c">Почему именно мы?</a></li>
-		      <li><a href="" style="background:#ed1c22">Карта и контакты</a></li>
+		      <li><a href="#Что_мы_делаем_на_занятиях?" style="background:#0d9cea">Что делаем на занятиях?</a></li>
+		      <li><a href="#Примеры_проектов" style="background:#a349a3">Примеры проектов</a></li>
+		      <li><a href="#Почему_именно_мы" style="background:#edd31c">Почему именно мы?</a></li>
+		      <li><a href="#Карта_и_контакты" style="background:#ed1c22">Карта и контакты</a></li>
 		    </ul>
 		</div>
-			<div id="Что_такое_мультостудия?"></div>
+
+			<div id="Что_такое_мультостудия?"></div>			
 			<h1 style="color:yellow" class="headerBlog">Что такое Мультостудия?</h1>
 			<div id ="blogInfo">
 				<ul>
@@ -64,8 +65,8 @@
 				<div class="bigText">Запишите ребенка <br>на <text style="color:black">бесплатное</text> занятие <br>прямо сейчас!</div>
 				<form name="test" method="post" action="input.php">
 					<ul>
-						<li><input type="text" placeholder="Ваше ФИО"></br></li>
-						<li><input type="text" placeholder="Ваш номер телефона"></li>
+						<li><input type="text" name="FIO" placeholder="Ваше ФИО"></br></li>
+						<li><input type="text" name="number" placeholder="Ваш номер телефона"></li>
 					</ul>
 						<div class="bluebutton">Записаться на занятие</div>
 						<div class="minitext">После получения Ваших контактных данных с Вами свяжется администратор нашего центра и согласует время занятия! Пожалуйста, будьте на связи!</div>					
@@ -75,35 +76,53 @@
 		</div>
 
 		<div id = "container2">
-			<div id="Чему_научиться_ребенок?"></div>
+			<div id="Что_мы_делаем_на_занятиях?"></div> 
 			<h1 style="color:yellow" class="headerBlog">Что мы делаем на занятиях?</h1>
 				<div class="zanatia">
 			    <ul>
 			      <li><img src="images/lepim.png"/><br>Лепим!</li>
 			      <li><img src="images/stroim.png"/><br>Строим!</li>
-			      <li><img src="images/img.jpg"/><br>Вырезаем!</li>
-			      <li><img src="images/img.jpg"/><br>Рисуем!</li>
+			      <li><img src="images/virezaem.png"/><br>Вырезаем!</li>
+			      <li><img src="images/risuem.png"/><br>Рисуем!</li>
 			    </ul>
 			</div>
 			<h1 style="color:black" class="headerBlog">А пото-о-о-м...</h1>
 				<div class="zanatia1">
-			    <ul>
-			      <li><img src="images/img.jpg"/><br>Моделируем сцену, добавляем свет</li>
-			      <li><img src="images/img.jpg"/><br>Снимаем кадры</li>
-			      <li><img src="images/img.jpg"/><br>Монтируем видео, озвучиваем</li>
-			    </ul>
-			</div>
+				    <ul>
+					    <li><img src="images/img.jpg"/><br>Моделируем сцену, добавляем свет</li>
+					    <li><img src="images/img.jpg"/><br>Снимаем кадры</li>
+					    <li><img src="images/img.jpg"/><br>Монтируем видео, озвучиваем</li>
+				    </ul>
+				</div>
+		</div>
+		
+		<div id = "container3">
 			<h1 style="color:black" class="headerBlog">Еще немного старания....<br>И мультфильм готов!!</h1>
-			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты:</h1>
+			<div id="Примеры_проектов"></div>
+			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты</h1>
+			<div class="video">
+				<ul>
+					<li><iframe src="https://www.youtube.com/embed/xxv19zgnP34" frameborder="0" allowfullscreen></iframe></li>
+					<li><iframe src="https://www.youtube.com/embed/xxv19zgnP34" frameborder="0" allowfullscreen></iframe></li>
+					<li><iframe src="https://www.youtube.com/embed/xxv19zgnP34" frameborder="0" allowfullscreen></iframe></li>
+				</ul>
+				<br><br><br>
+			</div>
+			<div class="bluebutton"><a href="#Что_такое_мультостудия?">Немедленно записываю ребенка на бесплатное занятие!</a></div>
+			<br><br><br>
+		</div>
+
+		<div id = "container4">
+			<div id="Почему_именно_мы"></div>
+			<h1 style="color:black" class="headerBlog">Почему еще стоит пойти в нашу студию</h1>
 		</div>
 	
 		<div id = "contacts">
+			<div id="Карта_и_контакты"></div>
 			<h1 style="color:black" class="headerBlog">Карта и контакты</h1>
 			<a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001019995442/center/61.37535810470582,55.15696610424921/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a><div class="dg-widget-link"><a href="http://2gis.ru/chelyabinsk/center/61.375358,55.156963/zoom/16/routeTab/rsType/bus/to/61.375358,55.156963╎Интернет технологии, ООО, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Интернет технологии, ООО, компания</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1200,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.15696610424921,"lon":61.37535810470582,"zoom":16},"opt":{"city":"chelyabinsk"},"org":[{"id":"70000001019995442"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-			<br>
-			<br>
-			<br>
-			<div class="bluebutton" >Хочу получить бесплатный урок для ребенка!</div>
+			<br><br><br>
+			<div class="bluebutton" ><a href="#Что_такое_мультостудия?">Хочу получить бесплатный урок для ребенка!</a></div>
 		</div>
 
 		<div id="footer">
