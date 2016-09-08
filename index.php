@@ -35,44 +35,45 @@
     	</div>
     	<div class="testblog"></div>
 		<div id = "container1">
-		<div id="idmenu" class="menu">
-		    <ul>
-		      <li><a href="#Что_такое_мультостудия?" style="background:#fd8026">Что такое мультостудия?</a></li>
-		      <li><a href="#Что_мы_делаем_на_занятиях?" style="background:#0d9cea">Что делаем на занятиях?</a></li>
-		      <li><a href="#Примеры_проектов" style="background:#a349a3">Примеры проектов</a></li>
-		      <li><a href="#Почему_именно_мы" style="background:#edd31c">Почему именно мы?</a></li>
-		      <li><a href="#Карта_и_контакты" style="background:#ed1c22">Карта и контакты</a></li>
-		    </ul>
-		</div>
-
-			<div id="Что_такое_мультостудия?"></div>			
-			<h1 style="color:yellow" class="headerBlog">Что такое Мультостудия?</h1>
-			<div id ="blogInfo">
-				<ul>
-					<li>Целый год занятий мультипликацией stop-motion! (1 или 2 раза в неделю) <br>
-	         		<a href="#">Что такое stop-motion?<a></li>
-					<li>Не нужно уметь рисовать! Делать мультики в нашей студии сможет каждый!</li>
-					<li>Развитие мелкой моторики</li>
-					<li>Навыки работы с компьютерными программами (монтажа, озвучки, рисования)</li>
-					<li>Навыки командной и проектной работы.</li>
-					<li>Что ещё? Приходите на бесплатное занятие, мы всё вам расскажем! Заполните форму справа -->></li>
-				</ul>
+			<div id="idmenu" class="menu">
+			    <ul>
+			      <li><a href="#Что_такое_мультостудия?" style="background:#fd8026">Что такое мультостудия?</a></li>
+			      <li><a href="#Что_мы_делаем_на_занятиях?" style="background:#0d9cea">Что делаем на занятиях?</a></li>
+			      <li><a href="#Примеры_проектов" style="background:#a349a3">Примеры проектов</a></li>
+			      <li><a href="#Почему_именно_мы" style="background:#edd31c">Почему именно мы?</a></li>
+			      <li><a href="#Карта_и_контакты" style="background:#ed1c22">Карта и контакты</a></li>
+			    </ul>
 			</div>
-			<div id ="makaka">
-			<img src="images/obvlenia.png" alt="Формируем навыки работы с программами"/>
-			</div>
-			<div id ="formasvazi">
-				<div class="bigText">Запишите ребенка <br>на <text style="color:black">бесплатное</text> занятие <br>прямо сейчас!</div>
-				<form name="test" method="post" action="input.php">
+			<div class="podcontainer1">
+				<div id="Что_такое_мультостудия?"></div>			
+				<h1 style="color:yellow" class="headerBlog">Что такое Мультостудия?</h1>
+				<div id ="blogInfo">
 					<ul>
-						<li><input type="text" name="FIO" placeholder="Ваше ФИО"></br></li>
-						<li><input type="text" name="number" placeholder="Ваш номер телефона"></li>
+						<li>Целый год занятий мультипликацией stop-motion! (1 или 2 раза в неделю) <br>
+		         		<a href="#">Что такое stop-motion?<a></li>
+						<li>Не нужно уметь рисовать! Делать мультики в нашей студии сможет каждый!</li>
+						<li>Развитие мелкой моторики</li>
+						<li>Навыки работы с компьютерными программами (монтажа, озвучки, рисования)</li>
+						<li>Навыки командной и проектной работы.</li>
+						<li>Что ещё? Приходите на бесплатное занятие, мы всё вам расскажем! Заполните форму справа -->></li>
 					</ul>
+				</div>
+				<div id ="makaka">
+				<img src="images/obvlenia.png" alt="Формируем навыки работы с программами"/>
+				</div>
+				<div id ="formasvazi">
+					<div class="bigText">Запишите ребенка <br>на <text style="color:black">бесплатное</text> занятие <br>прямо сейчас!</div>
+					<form name="test" method="post" action="input.php">
+						<ul>
+							<li><input type="text" name="FIO" placeholder="Ваше ФИО"></br></li>
+							<li><input type="text" name="number" placeholder="Ваш номер телефона"></li>
+						</ul>
 						<div class="bluebutton">Записаться на занятие</div>
 						<div class="minitext">После получения Ваших контактных данных с Вами свяжется администратор нашего центра и согласует время занятия! Пожалуйста, будьте на связи!</div>					
-				</form>	
-				<small></small>			
-			</div>
+					</form>	
+					<small></small>			
+				</div>
+			</div>			
 		</div>
 
 		<div id = "container2">
@@ -89,15 +90,16 @@
 			<h1 style="color:black" class="headerBlog">А пото-о-о-м...</h1>
 				<div class="zanatia1">
 				    <ul>
-					    <li><img src="images/img.jpg"/><br>Моделируем сцену, добавляем свет</li>
-					    <li><img src="images/img.jpg"/><br>Снимаем кадры</li>
-					    <li><img src="images/img.jpg"/><br>Монтируем видео, озвучиваем</li>
+					    <li><img src="images/img1.png"/><br>Моделируем сцену, добавляем свет</li>
+					    <li><img src="images/img2.png"/><br>Снимаем кадры</li>
+					    <li><img src="images/img3.png"/><br>Монтируем видео, озвучиваем</li>
 				    </ul>
 				</div>
 		</div>
 		
 		<div id = "container3">
 			<h1 style="color:black" class="headerBlog">Еще немного старания....<br>И мультфильм готов!!</h1>
+			<img src="images/children.png" class="children" />
 			<div id="Примеры_проектов"></div>
 			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты</h1>
 			<div class="video">
