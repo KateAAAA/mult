@@ -120,6 +120,7 @@
 		<div id = "container4">
 			<div id="Почему_именно_мы"></div>
 			<h1 style="color:black" class="headerBlog">Почему еще стоит пойти в нашу студию</h1>
+			<div class="bluebuttonmap"><a href="#Карта_и_контакты">Смотреть на карте</a></div>
 		</div>
 	
 		<div id = "contacts">
@@ -139,6 +140,7 @@
 
 		<div id="footer">
 			<div class="footertext">
+				<a href="https://www.instagram.com/novatikus/" ><img src="images/insta.png"/></a> <a href="https://vk.com/novatikus"><img src="images/vk.png"/></a><br>
 				ООО "Интернет технологии" (с) 2014-2016<br>
 				г. Челябинск, ул. Энтузиастов, 12, офис 607<br>
 				751-12-67

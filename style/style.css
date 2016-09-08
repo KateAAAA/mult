@@ -369,6 +369,31 @@ div.podcon4 {
 	width: 100%;
 	text-align: center;
 }
+div.bluebuttonmap {
+  color: white;
+  width: 201px;
+  font-size: 18px;
+  padding: 8px;
+  margin: 0 auto;
+	text-decoration: none;
+	border-radius: 15px;
+	background: #3a53cf;
+	transition: 0.2s;
+	margin-left: 62%;
+    margin-top: 12%;
+} 
+div.bluebuttonmap:hover { 
+	background: rgb(53, 72, 167); 
+	cursor:pointer;
+}
+div.bluebuttonmap:active {
+  background: #3a53cf;
+}
+div.bluebuttonmap a {
+	color: white;
+	text-decoration: none;
+  	text-align: center;
+}
 /* --------контакты--------- */
 #contacts {
 	margin: 0 auto;
