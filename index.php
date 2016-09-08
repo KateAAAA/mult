@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
+        <title>Мультстудия</title>
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <!--[if lt IE 9]>
 			<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
@@ -11,14 +11,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>
 		  $(window).on("scroll", function() {
-		    if ($(window).scrollTop() > 388){
+		    if ($(window).scrollTop() > 302){
 		    	if (!($("div").is(".minilogo")))$('.container').append('<div class="minilogo"><img src="images/mini.png"/></div>');}
 		    else
 		    	if ($("div").is(".minilogo"))	$("div" ).remove(".minilogo");    	
 		    });
 
 		  $(window).on("scroll", function() {
-		    if ($(window).scrollTop() > 388){
+		    if ($(window).scrollTop() > 302){
 		    	$('#idmenu').removeClass('menu');
 		    	$('#idmenu').addClass('menufixed');
 		    }		    	
@@ -37,7 +37,7 @@
 		<div id = "container1">
 			<div id="idmenu" class="menu">
 			    <ul>
-			      <li><a href="#Что_такое_мультостудия?" style="background:#fd8026">Что такое мультостудия?</a></li>
+			      <li><a href="#Что_такое_мультстудия?" style="background:#fd8026">Что такое мультстудия?</a></li>
 			      <li><a href="#Что_мы_делаем_на_занятиях?" style="background:#0d9cea">Что делаем на занятиях?</a></li>
 			      <li><a href="#Примеры_проектов" style="background:#a349a3">Примеры проектов</a></li>
 			      <li><a href="#Почему_именно_мы" style="background:#edd31c">Почему именно мы?</a></li>
@@ -45,8 +45,8 @@
 			    </ul>
 			</div>
 			<div class="podcontainer1">
-				<div id="Что_такое_мультостудия?"></div>			
-				<h1 style="color:yellow" class="headerBlog">Что такое Мультостудия?</h1>
+				<div id="Что_такое_мультстудия?"></div>			
+				<h1 style="color:yellow" class="headerBlog">Что такое Мультстудия?</h1>
 				<div id ="blogInfo">
 					<ul>
 						<li>Целый год занятий мультипликацией stop-motion! (1 или 2 раза в неделю) <br>
@@ -63,12 +63,12 @@
 				</div>
 				<div id ="formasvazi">
 					<div class="bigText">Запишите ребенка <br>на <text style="color:black">бесплатное</text> занятие <br>прямо сейчас!</div>
-					<form name="test" method="post" action="input.php">
+					<form name="test" method="post">
 						<ul>
 							<li><input type="text" name="FIO" placeholder="Ваше ФИО"></br></li>
 							<li><input type="text" name="number" placeholder="Ваш номер телефона"></li>
 						</ul>
-						<div class="bluebutton">Записаться на занятие</div>
+						<button class="bluebutton">Записаться на занятие</button>
 						<div class="minitext">После получения Ваших контактных данных с Вами свяжется администратор нашего центра и согласует время занятия! Пожалуйста, будьте на связи!</div>					
 					</form>	
 					<small></small>			
@@ -77,7 +77,8 @@
 		</div>
 
 		<div id = "container2">
-			<div id="Что_мы_делаем_на_занятиях?"></div> 
+			<div class="podcon2"></div> 
+			<div id="Что_мы_делаем_на_занятиях?"></div>
 			<h1 style="color:yellow" class="headerBlog">Что мы делаем на занятиях?</h1>
 				<div class="zanatia">
 			    <ul>
@@ -96,11 +97,13 @@
 				    </ul>
 				</div>
 		</div>
-		
-		<div id = "container3">
-			<h1 style="color:black" class="headerBlog">Еще немного старания....<br>И мультфильм готов!!</h1>
+		<div id="container3c">
+			<h1 style="color:black" class="headerBlog" class="podcon3"><br>Еще немного старания....<br>И мультфильм готов!!</h1>
 			<img src="images/children.png" class="children" />
-			<div id="Примеры_проектов"></div>
+		</div>		
+		<div id = "container3">
+			
+			<div id="Примеры_проектов" class="podcon4"></div>
 			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты</h1>
 			<div class="video">
 				<ul>
@@ -110,7 +113,7 @@
 				</ul>
 				<br><br><br>
 			</div>
-			<div class="bluebutton"><a href="#Что_такое_мультостудия?">Немедленно записываю ребенка на бесплатное занятие!</a></div>
+			<div class="bluebutton"><a href="#Что_такое_мультстудия?">Немедленно записываю ребенка на бесплатное занятие!</a></div>
 			<br><br><br>
 		</div>
 
@@ -122,9 +125,16 @@
 		<div id = "contacts">
 			<div id="Карта_и_контакты"></div>
 			<h1 style="color:black" class="headerBlog">Карта и контакты</h1>
-			<a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001019995442/center/61.37535810470582,55.15696610424921/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a><div class="dg-widget-link"><a href="http://2gis.ru/chelyabinsk/center/61.375358,55.156963/zoom/16/routeTab/rsType/bus/to/61.375358,55.156963╎Интернет технологии, ООО, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Интернет технологии, ООО, компания</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":1200,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.15696610424921,"lon":61.37535810470582,"zoom":16},"opt":{"city":"chelyabinsk"},"org":[{"id":"70000001019995442"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+
+			<a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001019995442/center/61.37535810470582,55.15696610424921/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a>
+			<div class="dg-widget-link">
+				<a href="http://2gis.ru/chelyabinsk/center/61.375358,55.156963/zoom/16/routeTab/rsType/bus/to/61.375358,55.156963╎Интернет технологии, ООО, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Интернет технологии, ООО, компания</a>
+			</div>
+			<script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+			<script charset="utf-8">new DGWidgetLoader({"width":'100%',"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.15696610424921,"lon":61.37535810470582,"zoom":16},"opt":{"city":"chelyabinsk"},"org":[{"id":"70000001019995442"}]});</script>
+			<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
 			<br><br><br>
-			<div class="bluebutton" ><a href="#Что_такое_мультостудия?">Хочу получить бесплатный урок для ребенка!</a></div>
+			<div class="bluebutton" ><a href="#Что_такое_мультстудия?">Хочу получить бесплатный урок для ребенка!</a></div>
 		</div>
 
 		<div id="footer">

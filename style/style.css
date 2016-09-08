@@ -3,7 +3,7 @@
     src: url(../fonts/Cuprum-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 body {
-    background: url(../images/fon.jpg) no-repeat; /* Цвет фона и путь к файлу */
+    background: url(../images/fon.png) no-repeat; /* Цвет фона и путь к файлу */
     color: #fff; /* Цвет текста */
     width: 99%;
      -moz-background-size: 100%; /* Firefox 3.6+ */
@@ -16,6 +16,30 @@ body {
 	margin: 0;
    }
 /* --------шапка--------- */  
+button.bluebutton {
+	color: white;
+	width: 201px;
+	font-size: 18px;
+	padding: 8px;
+	margin: 0 auto;
+	font-family: Cuprum;
+	text-decoration: none;
+	border-radius: 15px;
+	background: #3a53cf;
+	transition: 0.2s;
+}
+button.bluebutton:hover { 
+	background: rgb(53, 72, 167); 
+	cursor:pointer;
+}
+button.bluebutton:active {
+  background: #3a53cf;
+}
+button.bluebutton a {
+	color: white;
+	text-decoration: none;
+  	text-align: center;
+}
 div.bluebutton {
   color: white;
   width: 201px;
@@ -37,7 +61,8 @@ div.bluebutton:active {
 div.bluebutton a {
 	color: white;
 	text-decoration: none;
-  	text-align: center;}
+  	text-align: center;
+}
 div.container {
 	z-index: 100;
 	width: 100%;
@@ -137,7 +162,7 @@ div.container {
 }
 /* --------что такое мультостудия--------- */
 #container1 {
-	padding-top: 28%;
+	padding-top: 26%;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
@@ -148,13 +173,14 @@ div.container {
 	width: 85%;
 }
 .headerBlog {
-	padding-top: 7%;;
+	padding-top: 7%;
+    padding-bottom: 4%;
 	font-size: 45px;
 }
 #blogInfo {
 	border-radius: 15px;
 	background-color: white;
-	height: 450px;
+	height: 485px;
 	width: 35%;
 	float: left;
 	margin-left: 10px;
@@ -162,11 +188,13 @@ div.container {
 	text-align: left;
 }
 #blogInfo li {
-	list-style: none; /* Убираем исходные маркеры */
-	padding: 5%;
-    padding-bottom: 10px;
-    background: url(../images/monkey.png) no-repeat 0 5px; /*Параметры фона */
-    padding-left: 33px;
+	list-style: none;
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    background: url(../images/monkey.png) no-repeat 0 20px;
+    padding-left: 41px;
+    font-size: 18px;
 }
 #makaka {
 	width: 28%;
@@ -180,7 +208,7 @@ div.container {
 	background-color: white;
 	color:#534741; 
 	width: 35%;
-	height: 450px;
+	height: 485px;
 	float: left;
 }
 #formasvazi .bigText {
@@ -189,7 +217,7 @@ div.container {
 }
 #formasvazi .minitext {
 	font-size: 13px;
-    padding: 11%;
+    padding: 16%;
 }
 #formasvazi ul {
 	list-style-type:none;
@@ -206,6 +234,15 @@ div.container {
 	width: 85%;
 	text-align: center;
 	color: white;
+}
+div.podcon2 {
+	padding-top: 300px;
+}
+h1.podcon3 {
+	padding-top: 30px;
+}
+div.podcon4 {
+	margin-top: -80px;
 }
 .zanatia {
 	display: block;
@@ -271,6 +308,13 @@ div.container {
     border: 1px solid white; /* Параметры рамки */
     box-shadow: 0 0 7px #666; /* Параметры тени */
 }
+/* --------дети--------- */
+#container3c {
+	margin: 0 auto;
+	width: 100%;	
+	text-align: center;
+	color: red;
+}
 /* --------видео--------- */
 #container3 {
 	margin: 0 auto;
@@ -281,6 +325,7 @@ div.container {
 }
 .children {
 	width: 100%;
+	margin-top: -80px;
 }
 .video {
 	margin: 0 auto;	
@@ -327,7 +372,7 @@ div.container {
 /* --------контакты--------- */
 #contacts {
 	margin: 0 auto;
-	width: 85%;
+	width: 100%;
 	text-align: center;
 	color: red;
 }
@@ -338,7 +383,7 @@ div#footer {
 	color: black;
 	text-align: right;
 	background-color: red;
-	height: 330px;
+	height: 300px;
 	background: url(../images/footer.png) no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -347,8 +392,32 @@ div#footer {
 }
 .footertext {
 	position: absolute;
-    right: 25px;
-    bottom: 25px;
+	right: 25px;
+	bottom: 25px;
+}
+/* --------iширина экрана 1275 и меньше--------- */
+@media (max-width:1275px) {
+	#blogInfo li {
+		font-size: 17px;
+	}
+	.zanatia1 {
+		margin-top: -34px;
+	}
+}
+/* --------iширина экрана 1175 и меньше--------- */
+@media (max-width:1185px) {
+	div.podcon2 {
+	    padding-top: 210px;
+	}
+}
+/* --------iширина экрана 1100 и меньше--------- */
+@media (max-width:1100px) {
+	.video li {
+		width: 100%;
+	}
+	.zanatia.headerBlog {
+		font-size: 38px;
+	}
 }
 /* --------iширина экрана 1000 и меньше--------- */
 @media (max-width:1000px) {
@@ -357,6 +426,26 @@ div#footer {
 	}
 	#formasvazi .bigText {
 		font-size: 26px;
+	}
+	div#footer {
+		height: 200px;
+	}
+}
+/* --------iширина экрана 850 и меньше--------- */
+@media (max-width:850px) {
+	.zanatia img {
+		border: 7px solid white;
+		width: 80%;
+	}
+	.zanatia1 img {
+		width: 80%;
+	}
+	.headerBlog {
+		font-size: 35px;
+	}
+	.video iframe {
+		width: 80%;
+		height: 80%
 	}
 }
 /* --------iширина экрана 800 и меньше--------- */
@@ -383,6 +472,10 @@ div#footer {
 		padding-top: 23px;
     	padding-bottom: 23px;
 	}
+	#makaka img {
+		width: 40%;
+    	margin-top: -10px;
+	}
 	#formasvazi { 
 		width: 100%;
 		height: 10%;
@@ -390,9 +483,19 @@ div#footer {
 	#formasvazi .bigText {
 		margin-top: -21px;
 	}
-/* --------iширина экрана 800 и меньше--------- */
+	div#footer {
+		height: 180px;
+	}
+/* --------iширина экрана 600 и меньше--------- */
 @media (max-width:600px) {
-
+	div#footer {
+		height: 120px;
+	}
+	.footertext {
+		right: 15px;
+		bottom: 15px;
+		font-size: 13px;
+	}
 }
 /* --------iширина экрана 485 и меньше--------- */
 @media (max-width:485px) {
@@ -406,5 +509,23 @@ div#footer {
 		right: 0px;
 		font-size: 15px;	
 		font-family: Cuprum;
+	}
+	div#footer {
+		height: 90px;
+	}
+	.footertext {
+		right: 12px;
+		bottom: 12px;
+		font-size: 10px;
+	}
+}
+@media (max-width:400px){
+	div#footer {
+		height: 70px;
+	}
+	.footertext {
+		right: 10px;
+		bottom: 10px;
+		font-size: 8px;
 	}
 }
