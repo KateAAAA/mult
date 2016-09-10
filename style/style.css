@@ -315,6 +315,14 @@ div.podcon4 {
 	text-align: center;
 	color: red;
 }
+#container3c img {
+	position: relative;
+}
+.seahorse {
+	z-index: 5;
+    top: -564px;
+    float: right;
+}
 /* --------видео--------- */
 #container3 {
 	margin: 0 auto;
@@ -443,17 +451,106 @@ div#footer {
 	.zanatia.headerBlog {
 		font-size: 38px;
 	}
+	#blogInfo {
+		height: 430px
+	}
+	#blogInfo ul {
+		padding-left: 10px;
+	}
+	#blogInfo li {
+		font-size: 15px;
+	}
+	#formasvazi {
+		height: 430px
+	}
+	#formasvazi .bigText {
+    	font-size: 24px;
+    }
+    .zanatia1 ul {
+    	width: 100%
+    }
+    .zanatia {
+    	margin-top: -27px;
+    	margin-bottom: -70px;
+    }
+    .video iframe {
+    	width: 400px;
+    	height: 250px; 
+    }
+    .proect .headerBlog {
+    	padding-top: 11%;
+	    padding-bottom: 0%;
+	    padding-left: 19%;
+    }
+    #container3c .headerBlog {
+    	padding-top: 6%;
+    	padding-bottom: 5%;
+    }
+    #container4 {
+	    margin-bottom: -50px;
+	}
 }
 /* --------iширина экрана 1000 и меньше--------- */
 @media (max-width:1000px) {
 	#blogInfo {
-		font-size: 13px;
+		width: 39%;
+		height: 330px;
+	}
+	#formasvazi {
+		width: 39%;
+		height: 330px;
+	}
+	#blogInfo li{
+		font-size: 12px;
 	}
 	#formasvazi .bigText {
-		font-size: 26px;
+		font-size: 18px;
+		padding: 4%;
+	}
+	#formasvazi .minitext {
+	    font-size: 12px;
+	    padding: 8%;
 	}
 	div#footer {
 		height: 200px;
+	}
+	#makaka {
+		width: 19%
+	}
+	#makaka img {
+	    padding-left: 4px;
+	    width: 99%;
+	}
+	.headerBlog {
+		padding-top: 6%;
+    	padding-bottom: 1%;
+    	font-size: 43px;
+	}
+	div.bluebuttonmap {
+		width: 165px;
+    	font-size: 15px;
+    	padding: 6px;
+    	margin-left: 60%;
+    	margin-top: 13%;
+	}
+	#container4 {
+		margin-bottom: -100px;
+	}
+	#container3c .headerBlog {
+    	padding-top: 0%;
+    	padding-bottom: 5%;
+    }
+}
+/* --------iширина экрана 950 и меньше--------- */
+@media (max-width:950px) {
+	.zanatia1 img {
+	    width: 181px;
+	}
+	.seahorse {
+		top: -365px;
+	}
+	#container4 {
+		margin-bottom: -150px;
 	}
 }
 /* --------iширина экрана 850 и меньше--------- */
@@ -463,20 +560,34 @@ div#footer {
 		width: 80%;
 	}
 	.zanatia1 img {
-		width: 80%;
+		width: 65%;
 	}
 	.headerBlog {
 		font-size: 35px;
+	}
+	#blogInfo li {
+	    font-size: 11px;
+	    background: none;
+	    list-style: inherit;
+	    padding-left: 0px;
+	}
+	#blogInfo ul {
+		padding-left: 25px;
 	}
 	.video iframe {
 		width: 80%;
 		height: 80%
 	}
+	#container4 {
+		margin-bottom: -205px;
+	}
 }
 /* --------iширина экрана 800 и меньше--------- */
 @media (max-width:800px) {
 	.headerBlog {
-		font-size: 35px;
+		padding-top: 0%;
+    	padding-bottom: 0%;
+		font-size: 33px;
 	}
 	.menu a {
 		font-size: 10px;
@@ -485,32 +596,89 @@ div#footer {
 		font-size: 10px;
 	}
 	#blogInfo {
-		width: 100%;
+		width: 77%;
 		height: 10%;
 	}
 	#blogInfo li {
-		padding: 3%;
-    	padding-bottom: 6px;
+		padding: 2%;
+    	padding-bottom: 1px;
 	}
+	#blogInfo ul {
+		padding-left: 28px;
+    	margin-top: -2px;
+	} 	    
 	#makaka {
-		width: 100%;
+		width: 20%;
 		padding-top: 23px;
     	padding-bottom: 23px;
 	}
 	#makaka img {
-		width: 40%;
+		width: 100%;
     	margin-top: -10px;
 	}
 	#formasvazi { 
 		width: 100%;
 		height: 10%;
+		margin-top: 2%;
 	}
 	#formasvazi .bigText {
-		margin-top: -21px;
+		margin-top: 0px;
+		float: left;
+	}
+	#formasvazi ul {
+		padding-top: 2%;
 	}
 	div#footer {
 		height: 180px;
 	}
+	#formasvazi .minitext {
+	    padding: 3%;
+	}
+	#formasvazi li {
+    	padding: 1%;
+	}
+	div.bluebuttonmap {
+		margin-top: 21%;
+	}
+	div.podcon2 {
+		padding-top: 255px;
+	}
+	.zanatia1 {
+		margin-top: -10px;
+	}
+	.zanatia ul {
+		padding-bottom: 105px;
+	}
+	.children {
+		margin-top: -60px;
+	}
+	#container4 {
+		margin-bottom: -170px;
+	}
+	.proect .headerBlog {
+		padding-top: 16%;
+	    margin-bottom: 0%;
+	    padding-left: 19%;
+	}
+}
+@media (max-width:700px) {
+	.headerBlog {
+		font-size: 27px;
+	}
+	#formasvazi .minitext {
+	    padding: 1%;
+	}
+	#container3c .headerBlog {
+	    padding-top: 0%;
+	    padding-bottom: 7%;
+	}
+	div.bluebuttonmap {
+		font-size: 11px;
+		width: 126px;
+    	padding: 5px;
+        margin-top: 22%
+	}
+}
 /* --------iширина экрана 600 и меньше--------- */
 @media (max-width:600px) {
 	div#footer {
@@ -520,6 +688,12 @@ div#footer {
 		right: 15px;
 		bottom: 15px;
 		font-size: 13px;
+	}
+	#contacts {
+		margin-top: -200px;
+	}
+	.contactId {
+		margin-top: -200px;
 	}
 }
 /* --------iширина экрана 485 и меньше--------- */

@@ -100,11 +100,12 @@
 		<div id="container3c">
 			<h1 style="color:black" class="headerBlog" class="podcon3"><br>Еще немного старания....<br>И мультфильм готов!!</h1>
 			<img src="images/children.png" class="children" />
+			<img src="images/seahorse.png" class="seahorse" />
 		</div>		
 		<div id = "container3">
 			
 			<div id="Примеры_проектов" class="podcon4"></div>
-			<h1 style="color:black" class="headerBlog">Получаются вот такие проекты</h1>
+			<div class="proect"><h1 style="color:black" class="headerBlog">Получаются вот такие проекты</h1></div>
 			<div class="video">
 				<ul>
 					<li><iframe src="https://www.youtube.com/embed/xxv19zgnP34" frameborder="0" allowfullscreen></iframe></li>
@@ -124,7 +125,7 @@
 		</div>
 	
 		<div id = "contacts">
-			<div id="Карта_и_контакты"></div>
+			<div id="Карта_и_контакты" class="contactId"></div>
 			<h1 style="color:black" class="headerBlog">Карта и контакты</h1>
 
 			<a class="dg-widget-link" href="http://2gis.ru/chelyabinsk/firm/70000001019995442/center/61.37535810470582,55.15696610424921/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Челябинска</a>
